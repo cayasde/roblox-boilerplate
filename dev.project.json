@@ -1,0 +1,24 @@
+{
+  "name": "name",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$path": "src/shared",
+      "Assets": {
+        "$className": "Folder",
+        "$ignoreUnknownInstances": true
+      },
+      "Stories": {
+        "$path": "stories"
+      }
+    },
+    "ServerScriptService": {
+      "$path": "src/server"
+    },
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "$path": "src/client"
+      }
+    }
+  }
+}

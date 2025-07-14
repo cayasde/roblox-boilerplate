@@ -1,0 +1,16 @@
+# Project place file
+/roblox-boilerplate.rbxlx
+
+# Roblox Studio lock files
+/*.rbxlx.lock
+/*.rbxl.lock
+
+# Rojo
+sourcemap.json
+
+# Pesde
+.pesde
+luau_packages
+lune_packages
+roblox_packages
+pesde.lock
