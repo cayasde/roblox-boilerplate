@@ -7,6 +7,9 @@
       "Assets": {
         "$className": "Folder",
         "$ignoreUnknownInstances": true
+      },
+      "Net": {
+        "$path": "net"
       }
     },
     "ServerScriptService": {
