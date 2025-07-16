@@ -1,0 +1,15 @@
+type message = string
+
+event Server {
+  from: Server,
+  type: Reliable,
+  call: SingleSync,
+  data: message
+}
+
+event Client {
+  from: Client,
+  type: Reliable,
+  call: SingleSync,
+  data: message
+}
