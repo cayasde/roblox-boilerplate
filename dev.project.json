@@ -8,6 +8,9 @@
         "$className": "Folder",
         "$ignoreUnknownInstances": true
       },
+      "Net": {
+        "$path": "net"
+      },
       "Stories": {
         "$path": "stories"
       }

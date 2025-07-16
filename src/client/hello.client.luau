@@ -1,4 +1,12 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local Net = require(ReplicatedStorage.Net.Client)
 local hello = require(ReplicatedStorage.hello)
 
 print(hello:format("Client"))
+
+Net.hello.Server.On(function(message: Net.hello_message)
+	print(`[Server → Client] Received: "{message}"`)
+end)
+
+Net.hello.Client.Fire("Hello from client!")
