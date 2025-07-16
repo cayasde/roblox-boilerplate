@@ -1,0 +1,8 @@
+option ClientOutput = "net/Client.luau"
+option ServerOutput = "net/Server.luau"
+option TypesOutput = "net/Types.luau"
+
+option SyncValidation = true
+option WriteValidations = false
+
+import "remotes/hello"
