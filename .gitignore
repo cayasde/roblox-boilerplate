@@ -17,3 +17,6 @@ pesde.lock
 
 # Blink
 net
+
+# Editors config
+.vscode
