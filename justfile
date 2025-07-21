@@ -5,7 +5,6 @@ dev:
 setup:
     mkdir -p dist
     rokit install
-    lune setup
     blink .\.blink -y
     pesde install
     
