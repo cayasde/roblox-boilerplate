@@ -1,6 +1,6 @@
-option ClientOutput = "net/Client.luau"
-option ServerOutput = "net/Server.luau"
-option TypesOutput = "net/Types.luau"
+option ClientOutput = "dist/net/Client.luau"
+option ServerOutput = "dist/net/Server.luau"
+option TypesOutput = "dist/net/Types.luau"
 
 option SyncValidation = true
 option WriteValidations = false
