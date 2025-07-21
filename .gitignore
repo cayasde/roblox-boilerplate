@@ -20,3 +20,6 @@ net
 
 # Editors config
 .vscode
+
+# Dist
+dist
