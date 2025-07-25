@@ -22,5 +22,4 @@ net
 .vscode
 
 # Dist
-dist/*
-!dist/pesde.toml
+dist
