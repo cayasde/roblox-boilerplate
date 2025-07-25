@@ -2,8 +2,11 @@
   "name": "name",
   "tree": {
     "$className": "DataModel",
+    "ReplicatedFirst": {
+      "$path": "src/ReplicatedFirst"
+    },
     "ReplicatedStorage": {
-      "$path": "src/shared",
+      "$path": "src/ReplicatedStorage",
       "Assets": {
         "$className": "Folder",
         "$ignoreUnknownInstances": true
@@ -16,11 +19,11 @@
       }
     },
     "ServerScriptService": {
-      "$path": "src/server"
+      "$path": "src/ServerScriptService"
     },
     "StarterPlayer": {
       "StarterPlayerScripts": {
-        "$path": "src/client"
+        "$path": "src/StarterPlayerScripts"
       }
     }
   }
