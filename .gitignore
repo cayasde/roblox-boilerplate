@@ -10,9 +10,7 @@ sourcemap.json
 
 # Pesde
 .pesde
-luau_packages
-lune_packages
-roblox_packages
+*_packages
 pesde.lock
 
 # Blink
