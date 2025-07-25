@@ -9,7 +9,7 @@
         "$ignoreUnknownInstances": true
       },
       "Net": {
-        "$path": "dist/net"
+        "$path": "net"
       }
     },
     "ServerScriptService": {
