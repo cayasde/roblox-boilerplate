@@ -3,7 +3,10 @@
   "tree": {
     "$className": "DataModel",
     "ReplicatedFirst": {
-      "$path": "src/ReplicatedFirst"
+      "$path": "src/ReplicatedFirst",
+      "Packages": {
+        "$path": "roblox_packages"
+      }
     },
     "ReplicatedStorage": {
       "$path": "src/ReplicatedStorage",

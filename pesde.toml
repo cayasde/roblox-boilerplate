@@ -21,3 +21,4 @@ rojo = { name = "pesde/rojo", version = "^7.4.4", target = "lune" }
 UiLabs = { wally = "pepeeltoro41/ui-labs", version = "2.4.0" }
 
 [dependencies]
+Promise = { wally = "howmanysmall/typed-promise", version = "^4.0.6" }
