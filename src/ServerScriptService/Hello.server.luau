@@ -1,8 +1,7 @@
 local Players = game:GetService("Players")
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
-local Net = require(ReplicatedStorage.Net.Server)
-local Hello = require(ReplicatedStorage.Hello)
+local Net = require("@Net/Server")
+local Hello = require("@Shared/Hello")
 
 _G.__DEV__ = true
 

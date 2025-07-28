@@ -1,7 +1,5 @@
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
-local Net = require(ReplicatedStorage.Net.Client)
-local Hello = require(ReplicatedStorage.Hello)
+local Net = require("@Net/Client")
+local Hello = require("@Shared/Hello")
 
 print(Hello:format("Client"))
 
