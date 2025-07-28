@@ -1,0 +1,33 @@
+{
+  "name": "name",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedFirst": {
+      "$path": "out/ReplicatedFirst",
+      "Packages": {
+        "$path": "roblox_packages"
+      }
+    },
+    "ReplicatedStorage": {
+      "$path": "out/ReplicatedStorage",
+      "Assets": {
+        "$className": "Folder",
+        "$ignoreUnknownInstances": true
+      },
+      "Stories": {
+        "$path": "stories"
+      }
+    },
+    "ServerScriptService": {
+      "$path": "out/ServerScriptService"
+    },
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "$path": "out/StarterPlayerScripts"
+      },
+      "StarterCharacterScripts": {
+        "$path": "out/StarterCharacterScripts"
+      }
+    }
+  }
+}

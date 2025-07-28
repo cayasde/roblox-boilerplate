@@ -1,0 +1,33 @@
+{
+  "generator": "retain_lines",
+  "rules": [
+    {
+      "rule": "inject_global_value",
+      "identifier": "__DEV__",
+      "value": true
+    },
+    {
+      "rule": "convert_require",
+      "current": {
+        "name": "path",
+        "module_folder_name": "init"
+      },
+      "target": {
+        "name": "roblox",
+        "rojo_sourcemap": "sourcemap.json",
+        "indexing_style": "wait_for_child"
+      }
+    },
+    {
+      "rule": "rename_variables",
+      "include_functions": true
+    },
+    "remove_comments",
+    "remove_spaces",
+    "remove_nil_declaration",
+    "compute_expression",
+    "remove_unused_if_branch",
+    "filter_after_early_return",
+    "remove_empty_do"
+  ]
+}
