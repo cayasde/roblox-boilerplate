@@ -1,0 +1,13 @@
+asset_dir = "assets"
+exclude_assets = []
+write_dir = "src/ReplicatedStorage/"
+
+[creator]
+type = "user"
+id = 5497229519
+
+[codegen]
+output_name = "Assets"
+typescript = false
+style = "flat"
+strip_extension = true

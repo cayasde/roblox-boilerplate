@@ -21,3 +21,8 @@ net
 
 # Darklua
 out/
+
+# Asphalt
+src/ReplicatedStorage/Assets.luau
+asphalt.lock.toml
+.env*
