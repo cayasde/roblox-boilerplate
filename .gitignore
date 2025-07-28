@@ -19,5 +19,5 @@ net
 # Editors config
 .vscode
 
-# Dist
-dist
+# Darklua
+out/

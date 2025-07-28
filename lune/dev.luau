@@ -11,8 +11,16 @@ end)
 
 task.spawn(function()
 	process.spawn(
+		"darklua",
+		{ "process", "-w", "src/", "out/" },
+		{ stdio = "forward" }
+	)
+end)
+
+task.spawn(function()
+	process.spawn(
 		"rojo",
-		{ "serve", "dev.project.json" },
+		{ "serve", "dev.darklua.project.json" },
 		{ stdio = "forward" }
 	)
 end)
