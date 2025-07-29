@@ -13,9 +13,6 @@
       "Assets": {
         "$className": "Folder",
         "$ignoreUnknownInstances": true
-      },
-      "Stories": {
-        "$path": "stories"
       }
     },
     "ServerScriptService": {
