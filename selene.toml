@@ -1,5 +1,7 @@
 std = "selene_definitions"
 
+exclude = ["src/ReplicatedStorage/Net/**"]
+
 [lints]
 global_usage = "allow"
 multiple_statements = "allow"
