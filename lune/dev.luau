@@ -1,5 +1,10 @@
 local task = require("@lune/task")
 local process = require("@lune/process")
+local fs = require("@lune/fs")
+
+if fs.isDir("out/") then
+	fs.removeDir("out/")
+end
 
 task.spawn(function()
 	process.spawn(
