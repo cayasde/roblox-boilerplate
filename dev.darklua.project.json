@@ -9,14 +9,7 @@
       }
     },
     "ReplicatedStorage": {
-      "$path": "out/ReplicatedStorage",
-      "Assets": {
-        "$className": "Folder",
-        "$ignoreUnknownInstances": true
-      },
-      "Stories": {
-        "$path": "stories"
-      }
+      "$path": "out/ReplicatedStorage"
     },
     "ServerScriptService": {
       "$path": "out/ServerScriptService"
