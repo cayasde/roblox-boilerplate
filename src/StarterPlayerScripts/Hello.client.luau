@@ -1,5 +1,5 @@
-local Net = require("@Net/Client")
 local Hello = require("@Shared/Hello")
+local Net = require("@Net/Client")
 
 print(Hello:format("Client"))
 

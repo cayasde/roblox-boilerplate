@@ -1,13 +1,11 @@
 local Players = game:GetService("Players")
 
-local Net = require("@Net/Server")
 local Hello = require("@Shared/Hello")
+local Net = require("@Net/Server")
 
 _G.__DEV__ = true
 
-if _G.__DEV__ then
-	print("In dev mode.")
-end
+if _G.__DEV__ then print("In dev mode.") end
 
 print(Hello:format("Server"))
 
