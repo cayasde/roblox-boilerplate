@@ -4,6 +4,8 @@
     "lune": "~/.lune/.typedefs/0.8.9/",
     "pkg": "roblox_packages",
     "net": "src/ReplicatedStorage/Net",
-    "shared": "src/ReplicatedStorage"
+    "shared": "src/ReplicatedStorage",
+    "server": "src/ServerScriptService",
+    "client": "src/StarterPlayerScripts"
   }
 }
