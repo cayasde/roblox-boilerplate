@@ -1,3 +1,6 @@
 {
-    "luau-lsp.completion.imports.stringRequires.enabled": true
+    "luau-lsp.completion.imports.stringRequires.enabled": true,
+    "luau-lsp.types.definitionFiles": [
+        "types/__DEV__.d.luau"
+    ]
 }
