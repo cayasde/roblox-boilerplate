@@ -18,7 +18,7 @@ sourcemap_generator = ".pesde/scripts/sourcemap_generator.luau"
 [dev_dependencies]
 scripts = { name = "pesde/scripts_rojo", version = "^0.1.0", target = "lune" }
 rojo = { name = "pesde/rojo", version = "^7.4.4", target = "lune" }
-UiLabs = { wally = "pepeeltoro41/ui-labs", version = "2.4.0" }
+uilabs = { wally = "pepeeltoro41/ui-labs", version = "2.4.0" }
 
 [dependencies]
-Promise = { wally = "howmanysmall/typed-promise", version = "^4.0.6" }
+promise = { wally = "howmanysmall/typed-promise", version = "^4.0.6" }
