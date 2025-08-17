@@ -3,6 +3,7 @@ local process = require("@lune/process")
 local task = require("@lune/task")
 
 if fs.isDir("out/") then fs.removeDir("out/") end
+if fs.isFile("sourcemap.json") then fs.removeFile("sourcemap.json") end
 
 task.spawn(function()
 	process.spawn(
@@ -11,6 +12,10 @@ task.spawn(function()
 		{ stdio = "forward" }
 	)
 end)
+
+repeat
+	task.wait()
+until fs.isFile("sourcemap.json")
 
 task.spawn(function()
 	process.spawn(
