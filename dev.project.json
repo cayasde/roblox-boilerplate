@@ -16,6 +16,9 @@
       }
     },
     "ServerScriptService": {
+      "ServerPackages": {
+        "$path": "roblox_server_packages"
+      },
       "$path": "src/ServerScriptService"
     },
     "StarterPlayer": {

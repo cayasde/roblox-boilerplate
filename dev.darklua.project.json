@@ -12,6 +12,9 @@
       "$path": "out/ReplicatedStorage"
     },
     "ServerScriptService": {
+      "ServerPackages": {
+        "$path": "roblox_server_packages"
+      },
       "$path": "out/ServerScriptService"
     },
     "StarterPlayer": {
