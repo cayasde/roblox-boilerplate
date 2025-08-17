@@ -16,9 +16,6 @@ pesde.lock
 # Blink
 net
 
-# Editors config
-.vscode
-
 # Darklua
 out/
 
