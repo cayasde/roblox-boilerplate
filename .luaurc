@@ -2,8 +2,8 @@
   "languageMode": "strict",
   "aliases": {
     "lune": "~/.lune/.typedefs/0.8.9/",
-    "Pkg": "roblox_packages",
-    "Net": "src/ReplicatedStorage/Net",
-    "Shared": "src/ReplicatedStorage"
+    "pkg": "roblox_packages",
+    "net": "src/ReplicatedStorage/Net",
+    "shared": "src/ReplicatedStorage"
   }
 }
