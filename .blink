@@ -5,4 +5,9 @@ option TypesOutput = "src/ReplicatedStorage/Net/Types.luau"
 option SyncValidation = true
 option WriteValidations = false
 
-import "remotes/hello"
+event MyEvent {
+    From: Server,
+    Type: Reliable,
+    Call: SingleAsync,
+    Data: f64
+}
