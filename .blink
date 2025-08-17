@@ -1,6 +1,8 @@
-option ClientOutput = "src/ReplicatedStorage/Net/Client.luau"
-option ServerOutput = "src/ReplicatedStorage/Net/Server.luau"
-option TypesOutput = "src/ReplicatedStorage/Net/Types.luau"
+option ClientOutput = "src/ReplicatedStorage/net/client.luau"
+option ServerOutput = "src/ReplicatedStorage/net/server.luau"
+option TypesOutput = "src/ReplicatedStorage/net/types.luau"
+
+option Casing = Pascal
 
 option SyncValidation = true
 option WriteValidations = false
