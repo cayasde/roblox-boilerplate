@@ -33,6 +33,10 @@ task.spawn(function()
 	)
 end)
 
+repeat
+	task.wait()
+until fs.isDir("out/")
+
 task.spawn(function()
 	process.spawn(
 		"rojo",
