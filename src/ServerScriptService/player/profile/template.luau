@@ -1,0 +1,3 @@
+return {
+	playtime = 0,
+}
