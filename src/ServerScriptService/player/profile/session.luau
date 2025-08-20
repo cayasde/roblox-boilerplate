@@ -18,7 +18,7 @@ return function(player: Player): types.Profile?
 		end,
 	})
 
-	if profile == nil then
+	if not profile then
 		player:Kick("Profile load fail - Please rejoin")
 		return
 	end
@@ -34,5 +34,5 @@ return function(player: Player): types.Profile?
 		)
 	end)
 
-	return profile
+	return profile :: any
 end
