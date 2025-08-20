@@ -1,6 +1,7 @@
 local Players = game:GetService("Players")
 
 local profile_cache = require("@server/player/profile/cache")
+local reactive_cache = require("@server/player/profile/reactive/cache")
 local start_playtime_counter = require("@server/player/profile/playtime")
 local start_session = require("@server/player/profile/session")
 local types = require("@server/player/profile/types")
@@ -14,11 +15,13 @@ local function player_added(player: Player)
 	if not profile then return end
 
 	profile_cache.add(player, profile)
-	start_playtime_counter(profile)
+	reactive_cache.add(player, profile)
+	start_playtime_counter(player)
 end
 
 local function player_removing(player: Player)
 	local profile = profile_cache.get(player):expect()
+	reactive_cache.delete(player)
 	if profile ~= nil then profile:EndSession() end
 end
 
