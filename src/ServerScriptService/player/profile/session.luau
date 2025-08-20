@@ -1,5 +1,5 @@
 local Players = game:GetService("Players")
-local cache = require("@server/player/profile/cache")
+local profile_cache = require("@server/player/profile/cache")
 local profile_store = require("@serverpkg/profile_store")
 local template = require("@server/player/profile/template")
 local types = require("@server/player/profile/types")
@@ -27,7 +27,7 @@ return function(player: Player): types.Profile?
 	profile:Reconcile()
 
 	profile.OnSessionEnd:Connect(function()
-		cache.delete(player)
+		profile_cache.delete(player)
 		player:Kick("Profile session end - Please rejoin")
 		warn(
 			`[profilestore]: Profile session has ended ({profile.Key}) - Profile.Data will no longer be saved to the DataStore`
