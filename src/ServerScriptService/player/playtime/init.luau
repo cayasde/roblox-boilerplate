@@ -1,5 +1,5 @@
 local profile_cache = require("@server/player/profile/cache")
-local reactive_cache = require("@server/player/profile/reactive/cache")
+local reactive_cache = require("@server/player/profile/reactive")
 
 return function(player: Player)
 	task.spawn(function()
