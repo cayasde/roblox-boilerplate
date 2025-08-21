@@ -23,3 +23,4 @@ uilabs = { wally = "pepeeltoro41/ui-labs", version = "2.4.0" }
 [dependencies]
 promise = { wally = "howmanysmall/typed-promise", version = "^4.0.6" }
 profile_store = { wally = "lm-loleris/profilestore", version = "^1.0.3" }
+conch = { wally = "alicesaidhi/conch", version = "^0.3.0" }
