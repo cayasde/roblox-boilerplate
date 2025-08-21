@@ -8,6 +8,7 @@
     "shared": "src/ReplicatedStorage",
     "server": "src/ServerScriptService",
     "client": "src/StarterPlayerScripts",
-    "utils": "src/ReplicatedStorage/utils"
+    "utils": "src/ReplicatedStorage/utils",
+    "sharedfirst": "src\\ReplicatedFirst"
   }
 }
