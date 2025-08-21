@@ -2,7 +2,6 @@ local Players = game:GetService("Players")
 
 local profile_cache = require("@server/player/profile/cache")
 local reactive = require("@server/player/profile/reactive")
-local start_playtime_counter = require("@server/player/playtime")
 local start_session = require("@server/player/profile/session")
 local types = require("@server/player/profile/types")
 
@@ -16,7 +15,6 @@ local function player_added(player: Player)
 
 	profile_cache.add(player, profile)
 	reactive.add(player, profile)
-	start_playtime_counter(player)
 end
 
 local function player_removing(player: Player)
