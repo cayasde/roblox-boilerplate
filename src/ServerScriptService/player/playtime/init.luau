@@ -1,13 +1,11 @@
-local profile_cache = require("@server/player/profile/cache")
-local reactive_cache = require("@server/player/profile/reactive")
+local profile = require("@server/player/api/profile")
 
 return function(player: Player)
-	task.spawn(function()
-		local profile = reactive_cache.get(player):expect()
-		local playtime = profile.playtime
+	profile.get(player):andThen(function(data)
+		local playtime = data.playtime
 
 		while task.wait(1) do
-			if not profile_cache.get(player):expect() then break end
+			if not profile.is_active(player) then break end
 			playtime:set(playtime:get() + 1)
 		end
 	end)
