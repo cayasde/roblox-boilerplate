@@ -4,17 +4,26 @@ local handle_players = require("@utils/handle_players")
 return function()
 	conch.initiate_default_lifecycle()
 
-	local commands = script:FindFirstChild("commands")
-	local roles = {
-		dev = require("@server/player/console/roles/dev"),
-	}
+	local roles: { [string]: (Player) -> () } = {}
+	local commands_path = script:FindFirstChild("commands")
+	local roles_path = script:FindFirstChild("roles")
 
-	for _, command: Instance in commands:GetChildren() do
+	-- setup roles
+	for _, role: Instance in roles_path:GetChildren() do
+		if not role:IsA("ModuleScript") then return end
+		roles[role.Name] = require(role) :: any
+	end
+
+	-- setup commands
+	for _, command: Instance in commands_path:GetChildren() do
 		if not command:IsA("ModuleScript") then return end
 		local _required = require(command) :: any
 	end
 
+	-- setup players
 	handle_players(function(player: Player)
-		roles.dev(player)
+		for _, role in roles do
+			role(player)
+		end
 	end)
 end
