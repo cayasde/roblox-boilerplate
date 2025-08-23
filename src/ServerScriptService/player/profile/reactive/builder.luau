@@ -1,7 +1,7 @@
 local profile_types = require("@server/player/profile/types")
 local reconcile = require("@server/player/profile/reactive/reconcile")
 local types = require("@server/player/profile/reactive/types")
-local value = require("@utils/value")
+local value = require("@pkg/value")
 
 type Profile = profile_types.Profile
 type Value<T> = value.Interface<T>
