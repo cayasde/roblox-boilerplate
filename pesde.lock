@@ -173,6 +173,19 @@ direct = ["observer", { wally = "wally#cayasde/observer", version = "^0.1.2", in
 ref_ty = "wally"
 index_url = "https://github.com/UpliftGames/wally-index"
 
+[graph."wally#cayasde/value@0.1.1 roblox"]
+direct = ["value", { wally = "wally#cayasde/value", version = "^0.1.1", index = "default" }, "standard"]
+
+[graph."wally#cayasde/value@0.1.1 roblox".dependencies]
+observer = ["wally#cayasde/observer@0.1.2 roblox", "standard"]
+
+[graph."wally#cayasde/value@0.1.1 roblox".pkg_ref]
+ref_ty = "wally"
+index_url = "https://github.com/UpliftGames/wally-index"
+
+[graph."wally#cayasde/value@0.1.1 roblox".pkg_ref.dependencies]
+observer = [{ wally = "wally#cayasde/observer", version = ">=0.1.2, <0.2.0", index = "https://github.com/UpliftGames/wally-index" }, "standard"]
+
 [graph."wally#centau/vide@0.3.1 roblox".pkg_ref]
 ref_ty = "wally"
 index_url = "https://github.com/UpliftGames/wally-index"

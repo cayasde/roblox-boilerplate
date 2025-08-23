@@ -26,3 +26,4 @@ profile_store = { wally = "lm-loleris/profilestore", version = "^1.0.3" }
 conch = { wally = "alicesaidhi/conch", version = "^0.3.0" }
 conch-ui = { wally = "alicesaidhi/conch-ui", version = "^0.3.0" }
 observer = { wally = "cayasde/observer", version = "^0.1.2" }
+value = { wally = "cayasde/value", version = "^0.1.1" }
