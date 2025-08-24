@@ -3,7 +3,9 @@
   "tree": {
     "$className": "DataModel",
     "ReplicatedFirst": {
-      "$path": "out/ReplicatedFirst",
+      "start": {
+        "$path": "out/ReplicatedFirst"
+      },
       "Packages": {
         "$path": "roblox_packages"
       }
